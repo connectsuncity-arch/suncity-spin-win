@@ -3,62 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Suncity Spin & Win demo game" />
     <title>Suncity Bet</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app-shell">
-      <header class="topbar">
-        <div>
-          <p class="eyebrow">Lucky Spin</p>
-          <h1>Suncity Bet</h1>
-        </div>
-        <button id="resetBtn" class="secondary-btn" type="button">Reset</button>
-      </header>
-
-      <main class="game-layout">
-        <section class="stats-panel">
-          <div class="stat-card highlight">
-            <span class="label">Balance</span>
-            <strong id="balanceDisplay">1,000</strong>
-            <small>KES</small>
-          </div>
-
-          <div class="stat-card">
-            <span class="label">Loss Rate</span>
-            <strong>70%</strong>
-            <small>High-risk</small>
-          </div>
-        </section>
-
-        <section class="wheel-panel">
-          <div class="wheel-wrapper">
-            <div class="pointer" aria-hidden="true"></div>
-            <canvas id="wheel" width="320" height="320"></canvas>
-          </div>
-        </section>
-
-        <section class="controls-panel">
-          <div class="bet-row">
-            <label for="betAmount">Bet Amount</label>
-            <div class="bet-input-wrap">
-              <input id="betAmount" type="number" min="10" step="10" value="50" />
-              <span>KES</span>
-            </div>
-          </div>
-
-          <button id="spinBtn" class="spin-btn" type="button">Spin Wheel</button>
-
-          <div id="messageBox" class="message-box" aria-live="polite"></div>
-
-          <div class="history-box">
-            <h2>Recent Results</h2>
-            <ul id="historyList" class="history-list"></ul>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <script src="script.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
